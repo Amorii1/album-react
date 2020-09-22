@@ -1,0 +1,25 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+    background-color: #3a1d0f;
+}
+body{
+    background-color: #4c5da89f;
+}
+.album-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.pics{
+    height: 150px;
+    object-fit: cover !important;
+    overflow: hidden;
+}
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50vh;
+}
