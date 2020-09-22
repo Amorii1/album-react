@@ -16,7 +16,7 @@ const Album = () => {
   }, []);
 
   return (
-    <body>
+    <div className="bg">
       {loading ? (
         <Progress
           className="progress"
@@ -37,7 +37,7 @@ const Album = () => {
           </div>
         </div>
       )}
-    </body>
+    </div>
   );
 };
 

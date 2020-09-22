@@ -1,10 +1,11 @@
 .container{
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
-    background-color: #3a1d0f;
+    background: #e47966;
+    padding:10px 10px;
 }
-body{
-    background-color: #4c5da89f;
+.bg{
+    background: #4c5da89f;
 }
 .album-grid{
     display: grid;
@@ -22,4 +23,28 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+@media screen and (max-width: 1250px) {
+    .container{
+        margin-left:25px;
+        margin-right:25px;
+    
+    }
+    .album-grid{
+        grid-gap:10px;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .album-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .album-grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
 }
